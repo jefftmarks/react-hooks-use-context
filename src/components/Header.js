@@ -4,10 +4,8 @@ import DarkModeToggle from "./DarkModeToggle";
 import defaultUser from "../data";
 import { UserContext } from "../context/user";
 
-function Header({  }) {
-
-  const { user, setUser } = useContext(UserContext)
-
+function Header() {
+  const { user, setUser } = useContext(UserContext);
   function handleLogin() {
     if (user) {
       setUser(null);
